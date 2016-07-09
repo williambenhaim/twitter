@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./static/lib/css//bootstrap.min.css">
+    <link rel="stylesheet" href="./static/lib/css/keen-dashboards.css">
+    <link rel="stylesheet" href="./static/lib/css/dc.css">
+    <link rel="stylesheet" href="./static/css/custom.css">
+
+</head>
+
+<body class="application">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="./"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-sm-4">
+                    <form name="myform" onSubmit="return handleClick()">
+                        <input name="Submit" type="submit" value="Add to list">
+                        <input type="text" id="myVal" placeholder="Add some text&hellip;">
+                    </form>
+                </div>
+                <div class="col-sm-8">
+                    <div class="chart-wrapper">
+                        <div class="chart-stage">
+                            <div id="valtext"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="col-sm-6">
+            <div class="row">
+
+                <!-- Time Chart -->
+                <div class="col-sm-12">
+                    <div class="chart-wrapper">
+                        <div class="chart-title">
+                            Timeline of Tweets
+                        </div>
+                        <div class="chart-stage">
+                            <div id="tweetsTime-chart"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Time Chart -->
+
+                <!-- Resources Pie -->
+                <div class="col-sm-6">
+                    <div class="chart-wrapper">
+                        <div class="chart-title">
+                            Pos v. Neg
+                        </div>
+                        <div class="chart-stage">
+                            <div id="ratio-sent-piechart"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Resources Pie -->
+
+                <!-- Poverty Pie -->
+                <div class="col-sm-6">
+                    <div class="chart-wrapper">
+                        <div class="chart-title">
+                            Pos. WordCloud
+                        </div>
+                        <div class="chart-stage">
+                            <div id="wordcloud"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Resources Pie -->
+
+                <!-- Poverty Pie -->
+
+            </div>
+        </div>
+
+        <!-- Map -->
+        <div class="col-sm-6">
+            <div class="chart-wrapper">
+                <div class="chart-title">
+                    Distribution of Tweets
+                </div>
+                <div class="chart-stage">
+                    <div id="us-chart"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Map -->
+
+        <!-- Metric 1 -->
+        <div class="col-sm-4">
+            <div class="chart-wrapper">
+                <div class="chart-title">
+                    Total Number of Tweets
+                </div>
+                <div class="chart-stage">
+                    <div id="number-projects-nd"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Metric 1 -->
+
+        <!-- Metric 2 -->
+       <!--  <div class="col-sm-4">
+            <div class="chart-wrapper">
+                <div class="chart-title">
+                    Number of Pos. Tweets
+                </div>
+                <div class="chart-stage">
+                    <div id="total-donations-nd"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Metric 2 -->
+
+        <!-- Metric 2 -->
+<!--         <div class="col-sm-4">
+            <div class="chart-wrapper">
+                <div class="chart-title">
+                    Number of Neg. Tweets
+                </div>
+                <div class="chart-stage">
+                    <div id="total-donations-nd"></div>
+                </div>
+            </div>
+        </div> --> 
+        <!-- Metric 2 -->
+
+    </div>
+
+    </div>
+
+    <hr>
+
+    </div>
+
+    <script src="./static/lib/js/jquery.min.js"></script>
+    <script src="./static/lib/js/bootstrap.min.js"></script>
+    <script src="./static/lib/js/crossfilter.js"></script>
+    <script src="./static/lib/js/d3.js"></script>
+    <script src="./static/lib/js/dc.js"></script>
+    <script src="./static/lib/js/queue.js"></script>
+    <script src="./static/lib/js/d3.layout.cloud.js"></script>
+    <script src="./static/lib/js/keen.min.js"></script>
+    <script src='./static/js/graphs.js' type='text/javascript'></script>
+    <style>
+        li {display: inline-block; min-width: 30px; padding: 10px; margin: 0;}
+    </style>
+</body>
+
+</html>
